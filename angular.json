@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "auth-test-app"
+    }
+  },
+  "defaultProject": "auth-test-app",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,14 @@
+<div class="col-md-6">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" required>
+    </div>
+
+    <button  type="submit" [disabled]="!loginForm.valid" class="btn btn-primary">Submit</button>
+  </form>
+</div>
